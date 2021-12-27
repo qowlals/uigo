@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.line-class {
+    width: 100%;
+}
+
+.top-menu {
+    width: 75%;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.top-menu-ul-left {
+    padding: 10px 0;
+}
+
+.top-menu-ul-left a {
+    color: black;
+}
+
+.top-menu-ul-left a:hover {
+    color: rgb(29, 212, 245);
+}
+
+.top-menu-ul {
+    display: flex;
+    float: right; 
+}
+
+.top-menu-ul li {
+    margin: 10px 15px;
+}
+
+.top-menu-ul li a {
+    color: black;
+}
+
+.top-menu-ul li a:hover {
+    color: rgb(29, 212, 245);
+}
+
+.center-logo {
+    width: 100%;
+    border: 1px soild rgb(29, 212, 245);
+}
+
+.center-logo a img {
+    display: block;
+    width: 540px;
+    height: 170px;
+    margin: 1px auto;
+}
+
+.dropdown-ul {
+    margin-top: 20px;
+}
+
+.menu {
+    position: relative;
+    margin: 0 0;
+    padding: 10px 160px;
+    color: white;
+}
+
+.menu:hover .home-text {
+    color: rgb(29, 212, 245);
+}
+
+.ani-menu {
+    z-index: 9;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-3em);
+    z-index: 1;
+    transition: all 0.3s ease 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.menu:focus .ani-menu ,
+.menu:focus-within .ani-menu,
+.menu:hover .ani-menu {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
+    transition-delay: 0s, 0s, 0.3s;
+    z-index: 9;
+}
+
+.nav a {
+    color: #fff;
+    display: block;
+    padding: 15px 60px;
+}
+
+.ani-menu a {
+    width: 100%;
+    padding: 25px 10px;
+    color: white;
+}
+
+.ani-menu li {
+    margin: 20px 0;
+}
+
+nav ul, nav ul li {
+    text-align: center;
+}
+
+nav > ul > li {
+    display: inline-block;
+    border-left: 1px solid #fff;
+}
+
+.ani-menu {
+    background: rgb(29, 212, 245);
+    z-index: 9;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 700px;
+}
+
+.visual .inner {
+    height: 646px;
+    position: relative;
+}
+
+.visual .title {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.img1 {
+    position: absolute;
+    top: 600px;
+    right: 0;
+}
+
+.img2 {
+    position: absolute;
+    bottom: -700px;
+    right: 400px;
+    width: 1000px;
+}
+
+.visual .fade-in {
+    opacity: 0;
+}
+
+
+.w-btn {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.w-btn-gra3 {
+    background-color: transparent;
+    color: white;
+}
+
+.w-btn-gra3:hover {
+    background-color: rgb(29, 212, 245);
+}
